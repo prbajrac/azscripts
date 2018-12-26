@@ -7,13 +7,13 @@ import sys
 rg = raw_input('Resource Group: ')
 cluster = raw_input ('Cluster Name: ')
 
-resize = raw_input('Resize VM OsDisk ? Y or N ')
-resize = resize.upper()
-if resize == 'Y':
- osDiskSize = raw_input ('New OsDisk Size in Gb: ')
- print ('Script will resize the VM to ' + osDiskSize)
-else:
- print('Your OS Disk size will not be altered')
+#resize = raw_input('Resize VM OsDisk ? Y or N ')
+#resize = resize.upper()
+#if resize == 'Y':
+ #osDiskSize = raw_input ('New OsDisk Size in Gb: ')
+ #print ('Script will resize the VM to ' + osDiskSize)
+#else:
+ #print('Your OS Disk size will not be altered')
 
 
 ct = raw_input('Do you want to continue : ')
