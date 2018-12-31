@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 import os
 import subprocess
@@ -10,12 +11,12 @@ cluster = raw_input ('Cluster Name: ')
 #resize = raw_input('Resize VM OsDisk ? Y or N ')
 #resize = resize.upper()
 #if resize == 'Y':
- #osDiskSize = raw_input ('New OsDisk Size in Gb: ')
- #print ('Script will resize the VM to ' + osDiskSize)
+# osDiskSize = raw_input ('New OsDisk Size in Gb: ')
+# print ('Script will resize the VM to ' + osDiskSize)
 #else:
- #print('Your OS Disk size will not be altered')
+# print('Your OS Disk size will not be altered')
 print ('**************************************************************')
-print ("""Disclaimer The sample scripts are not supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind.
+print ("""Disclaimer: The sample scripts are not supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind.
 Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose.
 The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. 
 In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever
@@ -33,7 +34,7 @@ if ct == 'Y':
  print creds
  
  aksCluster = subprocess.check_output('az aks show -g '+ rg + ' -n ' + cluster, shell=True)
- #print aksCluster
+ print aksCluster
  
  print ('**************************************************************')
  print ('GETTING NODE RESOURCE GROUP')
